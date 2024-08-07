@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        .heading, .container, .contact-section, .footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .heading {
+            background-color: #0a79ef;
+            color: white;
+        }
+
+        .heading h1, .container p, .contact-section h2, .contact-section p, .footer p {
+            margin: 0;
+            width: 90%;
+            max-width: 700px;
+        }
+
+        #create {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+
+        #create a {
+            font-size: 1em;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: 500;
+            border-radius: 5px;
+            background-color: #0a79ef;
+            padding: 10px 20px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        #create a:hover {
+            background-color: #0056b3;
+        }
+
+        .contact-section {
+            flex-direction: column;
+        }
+
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-content h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .contact-content p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+
+        .contact-methods {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .contact-method {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .contact-method h3 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .contact-method p {
+            font-size: 1em;
+            margin-bottom: 10px;
+        }
+
+        .contact-method a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .contact-method a:hover {
+            color: #0056b3;
+        }
+
+        .footer {
+            background-color: #f1f1f1;
+            color: #080808;
+            padding: 20px 0;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-info {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .qr-code-section {
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            .heading h1, .container p, .contact-section h2, .contact-section p, .footer p {
+                font-size: 1em;
+                width: 100%;
+            }
+
+            #create {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .contact-content h2 {
+                font-size: 1.5em;
+            }
+
+            .contact-content p {
+                font-size: 1em;
+            }
+
+            .contact-methods {
+                flex-direction: column;
+            }
+
+            .contact-method {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>QR Code Generator</h1>
+    </div>
+    <div id="create">
+        <a href="index.html">Scan QR</a>
+        <a href="create.html">About</a>
+    </div>
+    <div class="container">
+        <p>For any question or request</p>
+    </div>
+    <section class="contact-section">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need support, feel free to reach out to us. We're here to assist you!</p>
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <h3>Email</h3>
+                    <p><a href="mailto:usaid6765@gmail.com">Usaid-6765@gmail.com</a></p>
+                </div>
+                <div class="contact-method">
+                    <h3>Phone</h3>
+                    <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2024 All rights reserved.</p>
+            </div>
+            <div class="qr-code-section">
+                <p>Scan the QR code below to access our exclusive services:</p>
+                <p>Or <a href="index.html">click here</a> to use our QR code scanner.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

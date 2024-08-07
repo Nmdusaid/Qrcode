@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+        }
+
+        .heading, .heading1, .he {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .heading h1, .he h4 {
+            margin: 0;
+        }
+
+        .heading1 h3 {
+            font-size: 1.2em;
+            font-weight: 500;
+            width: 90%;
+            max-width: 700px;
+            margin: 0;
+        }
+
+        #create {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+
+        #create a {
+            font-size: 1em;
+            color: white;
+            text-decoration: none;
+            cursor: pointer;
+            font-weight: 500;
+            border-radius: 5px;
+            background-color: #0a79ef;
+            padding: 10px 20px;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        #create a:hover {
+            background-color: #0056b3;
+        }
+
+        .article, .head4, .head5 {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .article p, .head4 p, .head5 p {
+            font-size: 1.1em;
+            width: 90%;
+            max-width: 700px;
+            margin: 0;
+        }
+
+        .head4 p a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .head4 p a:hover {
+            color: #0056b3;
+        }
+
+        .footer {
+            background-color: #f1f1f1;
+            color: #080808;
+            padding: 20px 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-info {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .qr-code-section {
+            text-align: center;
+            font-size: 1.2em;
+        }
+
+        @media (max-width: 768px) {
+            .heading1 h3, .article p, .head4 p, .head5 p {
+                font-size: 1em;
+                width: 100%;
+            }
+
+            #create a {
+                width: auto;
+                padding: 10px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>QR Code Generator</h1>
+    </div>
+    <div class="he">
+        <h4>About</h4>
+    </div>
+    <div id="create">
+        <a href="index.html">Scan QR</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div class="heading1">
+        <h3>“A QR code (abbreviation for Quick Response code) is a specific matrix barcode (or two-dimensional code) that is readable by dedicated QR barcode readers and camera telephones. The code consists of black modules arranged in a square pattern on a white background. The information encoded may be text, URL, or other data.”
+            <a href="https://en.wikipedia.org/wiki/QR_code" target="_blank">(Wikipedia)</a>
+        </h3>
+    </div>
+    <div class="article">
+        <p>
+            This site provides a QR Code scanner directly in the browser, implemented in JavaScript. Unlike other products, this solution provides an easier way to read QR Codes as no image uploading is necessary.
+        </p>
+    </div>
+    <div class="head4">
+        <p>
+            Supported browsers:
+            <a href="http://www.mozilla.com/firefox">Mozilla/Firefox</a>
+            or
+            <a href="http://www.google.com/chrome">Google/Chrome</a>
+        </p>
+    </div>
+    <div class="head5">
+        <p>Unlike other products, this solution provides an easier way to read QR Codes as no image uploading is necessary.</p>
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2024 All rights reserved.</p>
+            </div>
+            <div class="qr-code-section">
+                <p>Scan the QR code below to access our exclusive services:</p>
+                <p>Or <a href="index.html">click here</a> to use our QR code scanner.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

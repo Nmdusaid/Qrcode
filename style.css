@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(65, 145, 231);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+#create {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#create a {
+    padding-right: 4px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+}
+
+#action {
+    height: 4vh;
+    width: 80%;
+    max-width: 400px;
+    padding-left: 4px;
+    border: none;
+    font-family: inherit;
+    border: 2px solid black;
+    border-radius: 4.5px;
+    margin: 10px auto;
+}
+
+#btn {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+#btn button {
+    cursor: pointer;
+    font-family: inherit;
+    height: 32px;
+    width: 100%;
+    max-width: 120px;
+    background: white;
+    border-radius: 4px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+#btn button:hover {
+    transition: 0.3s;
+    background-color: rgb(179, 179, 179);
+}
+
+#qrcode {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    align-items: center;
+    padding: 20px;
+}
+
+#qrcode img {
+    height: 200px;
+    width: 200px;
+    max-width: 100%;
+}
+
+.bgcolor {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    padding: 20px;
+}
+
+.works {
+    background-color: burlywood;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 7px;
+    height: 70vh;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .heading, .text, #create, #btn, #qrcode, .bgcolor {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .works {
+        width: 90%;
+        height: auto;
+    }
+    
+    #action {
+        width: 90%;
+    }
+    
+    #btn button {
+        width: 90%;
+    }
+}
